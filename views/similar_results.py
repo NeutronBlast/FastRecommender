@@ -1,8 +1,7 @@
-import sys
 from PyQt5 import uic
-from PyQt5.QtWidgets import QDialog, QLineEdit
+from PyQt5.QtWidgets import QDialog
 from recommender import extract_movie_titles, get_movies_from_tastedive
-import similar_movies
+from views import similar_movies
 
 
 class SimilarResult(QDialog):

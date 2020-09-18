@@ -1,8 +1,6 @@
-import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
-import menu
-import movie_list_results
+from views import menu, movie_list_results
 
 
 class MovieList(QDialog):

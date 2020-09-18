@@ -1,9 +1,7 @@
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication
-import similar_movies
-import movie_info
-import movie_list
+from views import movie_info, movie_list, similar_movies
 
 
 class Menu(QMainWindow):

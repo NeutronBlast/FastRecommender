@@ -1,9 +1,8 @@
-import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
 from PyQt5.QtGui import QImage, QPixmap
 from recommender import get_movie_data, get_movie_rating
-import movie_info
+from views import movie_info
 import requests
 
 class InfoResult(QDialog):

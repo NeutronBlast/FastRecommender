@@ -1,8 +1,7 @@
-import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog, QTableWidgetItem
 from recommender import get_sorted_recommendations
-import movie_list
+from views import movie_list
 
 
 class SortedList(QDialog):
