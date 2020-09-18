@@ -1,6 +1,7 @@
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtGui import QIcon
 from views import movie_info, movie_list, similar_movies
 
 
@@ -16,6 +17,10 @@ class Menu(QMainWindow):
         self.option_3.mousePressEvent = self.movie_list
         self.l_option_3.mousePressEvent = self.movie_list
         self.exit.mousePressEvent = self.exit_program
+
+        # Set UI
+        self.setWindowTitle('FastRecommender')
+        self.setWindowIcon(QIcon('./gui/design/movie.png'))
 
     # Methods to call on icon click
     def movies_by_title(self, event):

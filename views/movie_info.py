@@ -1,5 +1,6 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
+from PyQt5.QtGui import QIcon
 from views import info_results
 import menu
 
@@ -10,6 +11,9 @@ class Info(QDialog):
         uic.loadUi("gui/info.ui", self)
         self.back_button.mousePressEvent = self.back_to_main
         self.search_button.mousePressEvent = self.show_info_results
+        self.setWindowTitle('FastRecommender | Info')
+        self.setWindowIcon(QIcon('./gui/design/movie.png'))
+
 
     def back_to_main(self, event):
         self.close()

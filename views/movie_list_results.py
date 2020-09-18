@@ -1,5 +1,6 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog, QTableWidgetItem
+from PyQt5.QtGui import QIcon
 from recommender import get_sorted_recommendations
 from views import movie_list
 
@@ -9,6 +10,8 @@ class SortedList(QDialog):
         super(SortedList, self).__init__()
         uic.loadUi("gui/titles_results.ui", self)
         self.back_button.mousePressEvent = self.back_to_form
+        self.setWindowTitle('FastRecommender | List')
+        self.setWindowIcon(QIcon('./gui/design/movie.png'))
         unsorted_list = title.strip().split(',')
         sorted_list = get_sorted_recommendations(unsorted_list)
 

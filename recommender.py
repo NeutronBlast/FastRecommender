@@ -49,9 +49,10 @@ def get_movie_data(name):
 
 
 def get_movie_rating(data):
-    for item in data['Ratings']:
-        if item['Source'] == 'Rotten Tomatoes':
-            return int(item['Value'][:-1])
+    if 'Ratings' in data:
+        for item in data['Ratings']:
+            if item['Source'] == 'Rotten Tomatoes':
+                return int(item['Value'][:-1])
     return 0
 
 
@@ -60,18 +61,3 @@ def get_sorted_recommendations(titles):
     for item in titles:
         movies.append({'title': item, 'rating': get_movie_rating(get_movie_data(item))})
     return sorted(movies, key=lambda movie: (movie['rating'], movie['title']), reverse=True)
-
-
-# Get information from API
-# similar_movies = get_movies_from_tastedive("Black Panther")
-# Get a list with similar titles
-# print(extract_movie_titles(similar_movies['Similar']['Results']))
-# Take a list of movie titles and get a list of similar titles
-# movie_list = ["Black Panther", "Captain Marvel"]
-# print(get_related_titles(movie_list))
-# Get information about a specific movie
-# print(get_movie_data("Deadpool 2"))
-# print(get_movie_rating(get_movie_data("Deadpool 2")))
-# Sort movies by Rotten Tomatoes score
-# print(get_sorted_recommendations(['Venom', 'Deadpool 2', 'Black Panther', 'Spiderman', 'Spiderman 2', 'Parasyte']))
-# print(get_sorted_recommendations(['Bridesmaids', 'Sherlock Holmes']))

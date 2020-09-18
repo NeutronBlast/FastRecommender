@@ -1,5 +1,6 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
+from PyQt5.QtGui import QIcon
 from views import similar_results
 import menu
 import search_params
@@ -9,6 +10,8 @@ class Similar(QDialog):
     def __init__(self):
         super(Similar, self).__init__()
         uic.loadUi("gui/similar.ui", self)
+        self.setWindowTitle('FastRecommender | Search for similar movies')
+        self.setWindowIcon(QIcon('./gui/design/movie.png'))
         self.back_button.mousePressEvent = self.back_to_main
         self.search_button.mousePressEvent = self.show_similar_results
         self.error_limit.setHidden(True)

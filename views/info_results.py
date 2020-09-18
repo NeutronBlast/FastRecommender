@@ -1,6 +1,6 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
-from PyQt5.QtGui import QImage, QPixmap
+from PyQt5.QtGui import QImage, QPixmap, QIcon
 from recommender import get_movie_data, get_movie_rating
 from views import movie_info
 import requests
@@ -11,6 +11,9 @@ class InfoResult(QDialog):
         uic.loadUi("gui/info_results.ui", self)
         self.title.setText('About '+title)
         self.back_button.mousePressEvent = self.back_to_form
+
+        self.setWindowTitle('FastRecommender | '+title)
+        self.setWindowIcon(QIcon('./gui/design/movie.png'))
 
         # Get info
         info = get_movie_data(title)
