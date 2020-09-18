@@ -17,4 +17,4 @@
 
 ## Run Program
 1. Clone the repo
-2. Open the project's folder in PyCharm set the script path to `views\menu.py`, or open PyCharm's terminal, do `cd views` and run `python menu.py`
+2. Open the project's folder in PyCharm set the script path to `views\menu.py`, or open PyCharm's terminal and run `python menu.py`

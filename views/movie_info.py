@@ -1,6 +1,7 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
-from views import info_results, menu
+from views import info_results
+import menu
 
 
 class Info(QDialog):

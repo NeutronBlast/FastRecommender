@@ -1,6 +1,7 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
-from views import menu, similar_results
+from views import similar_results
+import menu
 import search_params
 
 
