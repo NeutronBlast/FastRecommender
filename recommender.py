@@ -73,5 +73,5 @@ def get_sorted_recommendations(titles):
 # print(get_movie_data("Deadpool 2"))
 # print(get_movie_rating(get_movie_data("Deadpool 2")))
 # Sort movies by Rotten Tomatoes score
-#print(get_sorted_recommendations(['Venom', 'Deadpool 2', 'Black Panther', 'Spiderman', 'Spiderman 2', 'Parasyte']))
+# print(get_sorted_recommendations(['Venom', 'Deadpool 2', 'Black Panther', 'Spiderman', 'Spiderman 2', 'Parasyte']))
 # print(get_sorted_recommendations(['Bridesmaids', 'Sherlock Holmes']))

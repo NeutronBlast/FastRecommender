@@ -106,7 +106,7 @@
      <string>Get full information about a movie</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="option_3">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -122,7 +122,7 @@
      <pixmap>design/star.png</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="l_option_3">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -140,7 +140,7 @@
      <string>Sort a list of movies by rating</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="exit">
     <property name="geometry">
      <rect>
       <x>640</x>
